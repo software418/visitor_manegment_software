@@ -17,12 +17,7 @@ app.use(helmet());
 //-----------------morgan setup with winston-----------------
 
 morgan.token("user", (req) => req.user ? `ID:${req.user.id}` : "Guest");
-morgan.token("success", (req, res) => {
-  const status = res.statusCode;
-    if (status >= 200 && status < 300) return "true";
-    if (status >= 400) return "false";
-    return "N/A";
-});
+morgan.token("success", (req, res) =>req.success ? `${req.success}` : "false");
 
 const stream = { write: (message) => logger.http(message.trim()) };
 

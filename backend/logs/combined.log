@@ -66,3 +66,15 @@ http: [GET]|| /health ||User:Guest ||Status:200  ||Success:true  ||ResponseTime:
 info: [DB] Connected → localhost - { 2026-05-05 14:42:04 PM }
 http: [GET]|| /health ||User:Guest ||Status:200  ||Success:true  ||ResponseTime: { 5.372 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 14:42:16 PM }
 info: [DB] Connected → localhost - { 2026-05-05 14:55:10 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:41:03 PM }
+http: [GET]|| / ||User:Guest ||Status:404  ||Success:-  ||ResponseTime: { 8.298 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 17:41:04 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:41:32 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:41:33 PM }
+http: [GET]|| / ||User:Guest ||Status:404  ||Success:false  ||ResponseTime: { 2.197 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 17:41:43 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:42:20 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:42:26 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:42:37 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:42:43 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:42:44 PM }
+info: [DB] Connected → localhost - { 2026-05-05 17:42:49 PM }
+http: [GET]|| / ||User:Guest ||Status:404  ||Success:false  ||ResponseTime: { 2.153 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 17:42:54 PM }
