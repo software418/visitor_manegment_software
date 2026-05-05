@@ -1,0 +1,183 @@
+ visitor management system
+
+role: 3 admin, manager, operator
+
+admin credential is created by script only
+
+software main page is login - no authentication public route take company id useremail and pass
+same page see 1 more link to redirect forgot pass its also public no authentication take company id and email
+
+that send email of reset link with expire time take new pass conform pass and update it
+
+after login admin redirect to landing page everything is skellaton need to fillup all detail of company 
+side bar navbar and header share in all pages 
+show different based on user role and permission
+ 
+first only admin so no user so I explain only based on admin role
+
+have all permission by default
+
+5 main oppotion in side ba:
+ dashboard
+ create pass
+ seeting
+ report
+ change pass
+ and in bottom sign out
+
+now go to in setting it have every setting to setup for company all setting with crud operation 
+visting area
+department
+location
+visiting type
+carry with item
+system user
+id prof of visitor
+company register
+print seeting
+gate_pass setting
+finicial year // its year wise report and data
+re print gate pass // by passId
+purpose of visit
+
+now I devide every setting and data to different feature that have separate folder in backend with all working file
+each feature folder contain js file:
+ module
+ validation
+ service
+ controller
+ routes
+
+each request response uniform:
+status
+success : true/false
+mmessage:
+data
+
+error message:
+statusCode: 401/501/403 etc
+errorCode: "VALIDATION_ERROR","TOKEN_EXPIRED" etc
+message:
+errors:
+
+utils need to include
+
+jwt 
+logger
+Aperror
+emailutils
+
+middleware needed
+authmiddleware
+errorHandler
+sanitization
+validator
+ratelimitor
+uploadmiddleare
+
+now back to feature I divided
+1. auth 
+contain only one model its passwordreset model contain all data releted to that topic 
+method/operation:
+login
+logout
+refereshtoken
+forgotpass
+reset pass
+register// its bit complicated like register option only show in system user setting like its not public its authenticated url, admin can create role mnager or operater then assign them user pass and permission, 
+change pass 
+get list of active session
+
+2.user
+user model: contain 
+employeecode , full name in (first , middle , last),phone no, email, userEmail, pass,designation,department//reference of department module,userole,permission
+
+method:
+get profile
+update profile
+delete profile
+change pass
+get all user
+get userby id
+set inactive any user by id
+check in
+check out
+set active
+
+3.department
+model contain
+depId, depName,depCode
+
+method
+add department
+get department
+update
+delete
+get single
+active or inactive
+
+4.employee // different from user user is one who used system its just data of employee
+
+db contain:
+empId,epName(first middle last),emp_dep//reference,manager_id//reference
+
+method: add employee
+update
+delete
+get all
+get by id
+
+5. setting // little bit confusing one store seeting like template that are safe to store in way 
+
+two db contain
+
+setting templete contain 2 collection:
+  1 field schema:
+    key , label , feildtype ,require, _id: false
+  2 setting template:
+    name , type , fields[fieldschema], is active
+seeting db
+ template: setting template
+ type: copy from template
+ value: map of mongoose
+ is active
+ time stamp
+
+setting its safe to put in tree is 
+ visitor area, location, visitor type, carrywith, id proof, purpose
+
+not safe need different model
+employee , department, print, gatepass, 
+
+
+method:
+create seeting
+update setting
+delet setting
+get setting tree
+get setting template
+update setting template
+
+6 gatepass
+
+contain one db 
+singleday/multipleday, passed,status,date from - to, created by,approver_id,employee_id,location_id,visiting area, visitor type, purpose, check in,check out,approved at, 
+visitordetail-------
+name,phone,email,company,id proff type, id proff number, photo,item carrywith,visitor count,description,
+
+take every visitor detail in array for one passId
+
+method:
+create gatepass, check in , chek out ,cancle pass, list all pass, get single pass detail, get pass data with date filter, get pass by id, 
+
+pass status : created , pending , approved , reject , check in ,check out, 
+
+all operation and filter on gate pass 
+
+7 company 
+model contain:
+ full name , short name , host , email , logo, port no
+
+method 
+all crud on this data including image upload update delete
+

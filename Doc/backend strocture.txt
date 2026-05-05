@@ -1,0 +1,78 @@
+
+    Directory: D:\Manegment Software\backend
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+d-----        05-05-2026     12:42                logs                                                                                                                 
+d-----        05-05-2026     12:08                src                                                                                                                  
+-a----        05-05-2026     11:18            273 .env                                                                                                                 
+-a----        05-05-2026     10:23             54 .gitignore                                                                                                           
+-a----        05-05-2026     12:42          62232 package-lock.json                                                                                                    
+-a----        05-05-2026     12:42            679 package.json                                                                                                         
+
+
+    Directory: D:\Manegment Software\backend\logs
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+-a----        05-05-2026     14:55          10196 combined.log                                                                                                         
+-a----        05-05-2026     12:42              0 error.log                                                                                                            
+
+
+    Directory: D:\Manegment Software\backend\src
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+d-----        05-05-2026     12:34                config                                                                                                               
+d-----        05-05-2026     10:26                features                                                                                                             
+d-----        05-05-2026     12:30                middleware                                                                                                           
+d-----        05-05-2026     10:22                seed_data                                                                                                            
+d-----        05-05-2026     11:26                utils                                                                                                                
+-a----        05-05-2026     12:58           1533 app.js                                                                                                               
+-a----        05-05-2026     12:42           1136 server.js                                                                                                            
+
+
+    Directory: D:\Manegment Software\backend\src\config
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+-a----        05-05-2026     12:37            575 db.js                                                                                                                
+
+
+    Directory: D:\Manegment Software\backend\src\features
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+d-----        05-05-2026     10:25                auth                                                                                                                 
+d-----        05-05-2026     10:26                company                                                                                                              
+d-----        05-05-2026     10:25                department                                                                                                           
+d-----        05-05-2026     10:26                employe                                                                                                              
+d-----        05-05-2026     10:26                gate_pass                                                                                                            
+d-----        05-05-2026     10:26                settings                                                                                                             
+d-----        05-05-2026     10:25                users                                                                                                                
+
+
+    Directory: D:\Manegment Software\backend\src\middleware
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+-a----        05-05-2026     12:25           5003 errorHandler.js                                                                                                      
+-a----        05-05-2026     12:32           1272 ratelimite.middleware.js                                                                                             
+-a----        05-05-2026     12:29           1121 sanitize.middleware.js                                                                                               
+-a----        05-05-2026     12:28            285 validation.middleware.js                                                                                             
+
+
+    Directory: D:\Manegment Software\backend\src\utils
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+-a----        05-05-2026     11:25            327 appError.js                                                                                                          
+-a----        05-05-2026     11:18           3246 jwt.utils.js                                                                                                         
+-a----        05-05-2026     12:43           1283 logger.utils.js                                                                                                      

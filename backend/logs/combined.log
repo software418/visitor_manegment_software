@@ -1,0 +1,68 @@
+[info]: [DB] Connected → localhost - { 2026-05-05 12:42:53 PM }
+[info: [DB] Connected → localhost - { 2026-05-05 12:43:25 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:43:27 PM }
+http: [GET] / -User:Guest -Status:404  -Success:No  -ResponseTime: { 4.598 ms } [05/May/2026:07:13:46 +0000] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:43:46 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:44:23 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:44:25 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:44:27 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:44:30 PM }
+http: [GET] / -User:Guest -Status:404  -Success:-  -ResponseTime: { 3.466 ms } [05/May/2026:07:14:35 +0000] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:44:35 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:45:09 PM }
+http: [GET] / -User:Guest -Status:404  -Success:-  -ResponseTime: { 1.892 ms } [05/May/2026:07:15:16 +0000] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:45:16 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:46:38 PM }
+http: [GET] / -User:Guest -Status:404  -Success:-  -ResponseTime: { 2.156 ms } [Tue, 05 May 2026 07:16:43 GMT] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:46:43 PM }
+http: [GET] /favicon.ico -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.595 ms } [Tue, 05 May 2026 07:17:18 GMT] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:47:18 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:49:49 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:50:25 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:50:37 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:50:40 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:50:58 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 1.982 ms } [Tue, 05 May 2026 07:21:38 GMT] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:51:38 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.555 ms } [Tue, 05 May 2026 07:21:41 GMT] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:51:41 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.501 ms } [Tue, 05 May 2026 07:21:45 GMT] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:51:45 PM }
+http: [GET] / -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.232 ms } [Tue, 05 May 2026 07:21:48 GMT] -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:51:48 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:52:17 PM }
+http: [GET] / -User:Guest -Status:404  -Success:-  -ResponseTime: { 2.173 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:52:20 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.909 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:52:43 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.655 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:52:45 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.370 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:08 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.514 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:08 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.282 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:09 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.301 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:09 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.509 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:09 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.458 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:09 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:-  -ResponseTime: { 0.427 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:10 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:53:33 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:53:37 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:53:40 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:53:42 PM }
+http: [GET] /.well-known/appspecific/com.chrome.devtools.json -User:Guest -Status:404  -Success:false  -ResponseTime: { 4.101 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:53:44 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:11 PM }
+http: [GET] / -User:Guest -Status:404  -Success:false  -ResponseTime: { 7.227 ms }  -Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:54:13 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:27 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:29 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:30 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:34 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:39 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:42 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:46 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:54:52 PM }
+http: [GET] / ||User:Guest ||Status:404  ||Success:false  ||ResponseTime: { 2.083 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:54:56 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:55:22 PM }
+http: [GET]|| / ||User:Guest ||Status:404  ||Success:false  ||ResponseTime: { 2.098 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:55:25 PM }
+http: [GET]|| /false ||User:Guest ||Status:404  ||Success:false  ||ResponseTime: { 0.794 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:56:43 PM }
+http: [GET]|| /abcd ||User:Guest ||Status:404  ||Success:false  ||ResponseTime: { 0.263 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:56:57 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:57:48 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:57:51 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:57:58 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:58:01 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:58:06 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:58:10 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:58:12 PM }
+info: [DB] Connected → localhost - { 2026-05-05 12:58:14 PM }
+http: [GET]|| /health ||User:Guest ||Status:200  ||Success:true  ||ResponseTime: { 2.607 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 12:58:17 PM }
+info: [DB] Connected → localhost - { 2026-05-05 14:09:26 PM }
+http: [GET]|| /health ||User:Guest ||Status:200  ||Success:true  ||ResponseTime: { 7.069 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 14:09:34 PM }
+info: [DB] Connected → localhost - { 2026-05-05 14:42:04 PM }
+http: [GET]|| /health ||User:Guest ||Status:200  ||Success:true  ||ResponseTime: { 5.372 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-05 14:42:16 PM }
+info: [DB] Connected → localhost - { 2026-05-05 14:55:10 PM }

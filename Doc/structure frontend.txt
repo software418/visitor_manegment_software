@@ -1,0 +1,73 @@
+
+    Directory: D:\Manegment Software\frontend
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+d-----        05-05-2026     10:10                public                                                                                                               
+d-----        05-05-2026     14:31                src                                                                                                                  
+-a----        01-05-2026     16:35            253 .gitignore                                                                                                           
+-a----        01-05-2026     16:35            568 eslint.config.js                                                                                                     
+-a----        05-05-2026     10:10            360 index.html                                                                                                           
+-a----        05-05-2026     15:25          94853 package-lock.json                                                                                                    
+-a----        05-05-2026     15:24            701 package.json                                                                                                         
+-a----        01-05-2026     16:35           1027 README.md                                                                                                            
+-a----        05-05-2026     14:54            645 vite.config.js                                                                                                       
+
+
+    Directory: D:\Manegment Software\frontend\public
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+-a----        01-05-2026     16:35           9522 favicon.svg                                                                                                          
+-a----        01-05-2026     16:35           5031 icons.svg                                                                                                            
+
+
+    Directory: D:\Manegment Software\frontend\src
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+d-----        05-05-2026     10:14                app                                                                                                                  
+d-----        05-05-2026     10:12                features                                                                                                             
+d-----        05-05-2026     10:15                pages                                                                                                                
+d-----        05-05-2026     10:17                shared                                                                                                               
+d-----        05-05-2026     14:31                styles                                                                                                               
+-a----        05-05-2026     15:52             77 App.jsx                                                                                                              
+-a----        05-05-2026     14:47            312 main.jsx                                                                                                             
+
+
+    Directory: D:\Manegment Software\frontend\src\shared
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+d-----        05-05-2026     10:15                config                                                                                                               
+d-----        05-05-2026     10:16                constants                                                                                                            
+d-----        05-05-2026     10:16                hooks                                                                                                                
+d-----        05-05-2026     10:16                layouts                                                                                                              
+d-----        05-05-2026     10:16                services                                                                                                             
+d-----        05-05-2026     10:18                ui                                                                                                                   
+d-----        05-05-2026     10:17                utils                                                                                                                
+
+
+    Directory: D:\Manegment Software\frontend\src\shared\ui
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+d-----        05-05-2026     10:17                atoms                                                                                                                
+d-----        05-05-2026     10:17                molecules                                                                                                            
+d-----        05-05-2026     10:18                organisms                                                                                                            
+
+
+    Directory: D:\Manegment Software\frontend\src\styles
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                 
+----                 -------------         ------ ----                                                                                                                 
+-a----        05-05-2026     15:50           7942 index.css                                                                                                            
+
+
+PS D:\Manegment Software\frontend> 
