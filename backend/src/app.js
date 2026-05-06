@@ -5,19 +5,54 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import env from "dotenv";
 
-
 import logger from "./utils/logger.utils.js";
 import AppError from "./utils/appError.js";
+import { sanitizeInput } from "./middleware/sanitize.middleware.js";
 
-const app = express();
+import authRoutes from "./features/auth/auth.routes.js";
+import userRoutes from "./features/user/user.routes.js";
+
+
+// Load environment variables from .env file
 env.config();
-// ─── Middleware ───────────────────────────────────────────────────────────────
-app.use(helmet());
+const app = express();
+
+// CORS configuration
+const allowedOrigins = (process.env.CLIENT_URLS || process.env.CLIENT_URL || "")
+  .split(",")
+  .map((origin) => origin.trim().replace(/\/+$/, ""))
+  .filter(Boolean);
+
+const corsOptions = {
+  credentials: true,
+  origin(origin, callback) {
+    // Allow non-browser and same-origin requests that do not send Origin header.
+    if (!origin) return callback(null, true);
+    const normalizedOrigin = String(origin).trim().replace(/\/+$/, "");
+    if (!allowedOrigins.length || allowedOrigins.includes(normalizedOrigin)) {
+      return callback(null, true);
+    }
+    return callback(new Error(`CORS blocked for origin: ${origin}`));
+  },
+};
+
+//-----------------Middleware setup-----------------
+app.use(
+  helmet({
+    crossOriginResourcePolicy: { policy: "cross-origin" },
+  }),
+);
+app.use(cors(corsOptions));
+app.use(express.json({ limit: "1mb" }));
+app.use(cookieParser());
+app.use(sanitizeInput);
 
 //-----------------morgan setup with winston-----------------
 
-morgan.token("user", (req) => req.user ? `ID:${req.user.id}` : "Guest");
-morgan.token("success", (req, res) =>req.success ? `${req.success}` : "false");
+morgan.token("user", (req) => (req.user ? `ID:${req.user.id}` : "Guest"));
+morgan.token("success", (req, res) =>
+  req.success ? `${req.success}` : "false",
+);
 
 const stream = { write: (message) => logger.http(message.trim()) };
 
@@ -39,6 +74,8 @@ app.get("/health", (req, res) => {
   });
 });
 
-
+//-----------------Routes-----------------
+app.use("/api", authRoutes);
+app.use("/api/users", userRoutes);
 
 export default app;
