@@ -8,6 +8,7 @@ import env from "dotenv";
 import logger from "./utils/logger.utils.js";
 import AppError from "./utils/appError.js";
 import { sanitizeInput } from "./middleware/sanitize.middleware.js";
+import errorHandler from "./middleware/errorHandler.js";
 
 import authRoutes from "./features/auth/auth.routes.js";
 import userRoutes from "./features/user/user.routes.js";
@@ -75,7 +76,10 @@ app.get("/health", (req, res) => {
 });
 
 //-----------------Routes-----------------
-app.use("/api", authRoutes);
+app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 
+//-----------------Error handling-----------------
+ 
+app.use(errorHandler);
 export default app;

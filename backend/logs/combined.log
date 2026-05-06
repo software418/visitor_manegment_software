@@ -142,3 +142,210 @@ info: [DB] Connected → localhost - { 2026-05-06 12:12:16 PM }
 http: [GET]|| /api/auth/login ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 2.763 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-06 12:12:23 PM }
 http: [GET]|| /health ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 2.486 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-06 12:13:13 PM }
 http: [GET]|| /favicon.ico ||User:Guest ||Status:404  ||Success:false  ||ResponseTime: { 0.681 ms }  ||Device: { Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 } - { 2026-05-06 12:13:13 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:17:11 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:17:50 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:17:52 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:19:25 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:19:30 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:19:33 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:21:57 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:21:57 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:27:22 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:27:24 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:27:31 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 6.731 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 14:30:10 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 1.006 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 14:37:04 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 1.231 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 14:40:19 PM }
+info: [DB] Connected → localhost - { 2026-05-06 14:42:34 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 5.181 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 14:42:45 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 1.864 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 14:51:43 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:00:23 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 7.900 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:00:53 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 0.824 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:01:42 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:02:33 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:06:25 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:06:35 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:07:15 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 15:07:15 PM }
+warn: Route   : POST /api/auth/login - { 2026-05-06 15:07:15 PM }
+warn: Status  : 400 - { 2026-05-06 15:07:15 PM }
+warn: Code    : VALIDATION_ERROR - { 2026-05-06 15:07:15 PM }
+warn: Message : Validation failed - { 2026-05-06 15:07:15 PM }
+warn: Fields  : body → Invalid input: expected object, received undefined - { 2026-05-06 15:07:15 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:07:15 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:400  ||Success:false  ||ResponseTime: { 12.159 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:07:15 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:10:30 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 15:10:30 PM }
+warn: Route   : POST /api/auth/login - { 2026-05-06 15:10:30 PM }
+warn: Status  : 400 - { 2026-05-06 15:10:30 PM }
+warn: Code    : VALIDATION_ERROR - { 2026-05-06 15:10:30 PM }
+warn: Message : Validation failed - { 2026-05-06 15:10:30 PM }
+warn: Fields  : body → Invalid input: expected object, received undefined - { 2026-05-06 15:10:30 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:10:30 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:400  ||Success:false  ||ResponseTime: { 4.813 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:10:30 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:13:10 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:13:14 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:13:19 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 15:13:19 PM }
+warn: Route   : POST /api/auth/login - { 2026-05-06 15:13:19 PM }
+warn: Status  : 401 - { 2026-05-06 15:13:19 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 15:13:19 PM }
+warn: Message : Invalid credentials - { 2026-05-06 15:13:19 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:13:19 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 36.135 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:13:19 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:15:03 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:23:12 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 15:23:12 PM }
+warn: Route   : POST /api/auth/login - { 2026-05-06 15:23:12 PM }
+warn: Status  : 401 - { 2026-05-06 15:23:12 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 15:23:12 PM }
+warn: Message : Invalid credentials - { 2026-05-06 15:23:12 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:23:12 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 14.297 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:23:12 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:23:40 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:27:27 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:27:43 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:28:18 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:28:39 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:28:59 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:29:02 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:29:13 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:29:17 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:30:11 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:30:13 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:31:53 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:31:56 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:34:00 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:34:12 PM }
+info: User logged in: 69fb1199bec9199347ed3fb6 | role: admin - { 2026-05-06 15:34:19 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 350.005 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:34:19 PM }
+info: User logged in: 69fb1199bec9199347ed3fb6 | role: admin - { 2026-05-06 15:39:53 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 289.763 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:39:53 PM }
+info: Token refreshed for user: 69fb1199bec9199347ed3fb6 - { 2026-05-06 15:40:54 PM }
+http: [POST]|| /api/auth/refresh-token ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 28.048 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:40:54 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:44:32 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 15:44:32 PM }
+warn: Route   : POST /api/auth/forgot-password - { 2026-05-06 15:44:32 PM }
+warn: Status  : 400 - { 2026-05-06 15:44:32 PM }
+warn: Code    : VALIDATION_ERROR - { 2026-05-06 15:44:32 PM }
+warn: Message : Validation failed - { 2026-05-06 15:44:32 PM }
+warn: Fields  :  → Invalid input: expected object, received undefined - { 2026-05-06 15:44:32 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:44:32 PM }
+http: [POST]|| /api/auth/forgot-password ||User:Guest ||Status:400  ||Success:false  ||ResponseTime: { 3.715 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:44:32 PM }
+error: ───────────────────────────────────── - { 2026-05-06 15:44:57 PM }
+error: UNEXPECTED ERROR - { 2026-05-06 15:44:57 PM }
+error: Route  : POST /api/auth/forgot-password - { 2026-05-06 15:44:57 PM }
+error: Message: Expected double-quoted property name in JSON at position 63 (line 4 column 1) - { 2026-05-06 15:44:57 PM }
+error: Stack  : SyntaxError: Expected double-quoted property name in JSON at position 63 (line 4 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (D:\Manegment Software\backend\node_modules\body-parser\lib\types\json.js:72:19)
+    at D:\Manegment Software\backend\node_modules\body-parser\lib\read.js:162:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:227:14)
+    at invokeCallback (D:\Manegment Software\backend\node_modules\raw-body\index.js:238:16)
+    at done (D:\Manegment Software\backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\Manegment Software\backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:509:28)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) - { 2026-05-06 15:44:57 PM }
+error: Body   : undefined - { 2026-05-06 15:44:57 PM }
+error: ───────────────────────────────────── - { 2026-05-06 15:44:57 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:45:19 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 15:45:19 PM }
+warn: Route   : POST /api/auth/forgot-password - { 2026-05-06 15:45:19 PM }
+warn: Status  : 400 - { 2026-05-06 15:45:19 PM }
+warn: Code    : VALIDATION_ERROR - { 2026-05-06 15:45:19 PM }
+warn: Message : Validation failed - { 2026-05-06 15:45:19 PM }
+warn: Fields  : body → Invalid input: expected object, received undefined - { 2026-05-06 15:45:19 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 15:45:19 PM }
+http: [POST]|| /api/auth/forgot-password ||User:Guest ||Status:400  ||Success:false  ||ResponseTime: { 3.733 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:45:19 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:46:01 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:46:07 PM }
+error: ───────────────────────────────────── - { 2026-05-06 15:46:14 PM }
+error: UNEXPECTED ERROR - { 2026-05-06 15:46:14 PM }
+error: Route  : POST /api/auth/forgot-password - { 2026-05-06 15:46:14 PM }
+error: Message: sendPasswordResetEmail is not defined - { 2026-05-06 15:46:14 PM }
+error: Stack  : ReferenceError: sendPasswordResetEmail is not defined
+    at forgotPasswordService (file:///D:/Manegment%20Software/backend/src/features/auth/auth.service.js:153:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async forgotPassword (file:///D:/Manegment%20Software/backend/src/features/auth/auth.controller.js:85:5) - { 2026-05-06 15:46:14 PM }
+error: Body   : {"companyId":"COMP123","userEmail":"admin@vms.com"} - { 2026-05-06 15:46:14 PM }
+error: ───────────────────────────────────── - { 2026-05-06 15:46:14 PM }
+http: [POST]|| /api/auth/forgot-password ||User:Guest ||Status:500  ||Success:false  ||ResponseTime: { 47.305 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:46:14 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:48:35 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:48:45 PM }
+info: [DB] Connected → localhost - { 2026-05-06 15:56:36 PM }
+info: Token refreshed for user: 69fb1199bec9199347ed3fb6 - { 2026-05-06 15:56:37 PM }
+http: [POST]|| /api/auth/refresh-token ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 82.531 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:56:37 PM }
+info: User logged in: 69fb1199bec9199347ed3fb6 | role: admin - { 2026-05-06 15:56:43 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 314.827 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 15:56:43 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:03:51 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:03:51 PM }
+warn: Route   : GET /api/users/ - { 2026-05-06 16:03:51 PM }
+warn: Status  : 401 - { 2026-05-06 16:03:51 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:03:51 PM }
+warn: Message : Invalid token - { 2026-05-06 16:03:51 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:03:51 PM }
+http: [GET]|| /api/users/ ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 3.059 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:03:51 PM }
+info: Session limit reached for user 69fb1199bec9199347ed3fb6. Removed oldest session. - { 2026-05-06 16:04:00 PM }
+info: User logged in: 69fb1199bec9199347ed3fb6 | role: admin - { 2026-05-06 16:04:00 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 306.420 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:04:00 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:04:12 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:04:12 PM }
+warn: Route   : GET /api/users/ - { 2026-05-06 16:04:12 PM }
+warn: Status  : 401 - { 2026-05-06 16:04:12 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:04:12 PM }
+warn: Message : Invalid token - { 2026-05-06 16:04:12 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:04:12 PM }
+http: [GET]|| /api/users/ ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 1.949 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:04:12 PM }
+info: [DB] Connected → localhost - { 2026-05-06 16:12:17 PM }
+info: Session limit reached for user 69fb1199bec9199347ed3fb6. Removed oldest session. - { 2026-05-06 16:12:27 PM }
+info: User logged in: 69fb1199bec9199347ed3fb6 | role: admin - { 2026-05-06 16:12:27 PM }
+http: [POST]|| /api/auth/login ||User:Guest ||Status:200  ||Success:false  ||ResponseTime: { 373.826 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:12:27 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:12:47 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:12:47 PM }
+warn: Route   : POST /api/auth/logout - { 2026-05-06 16:12:47 PM }
+warn: Status  : 401 - { 2026-05-06 16:12:47 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:12:47 PM }
+warn: Message : Invalid token - { 2026-05-06 16:12:47 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:12:47 PM }
+http: [POST]|| /api/auth/logout ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 4.006 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:12:47 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:13:16 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:13:16 PM }
+warn: Route   : POST /api/auth/logout - { 2026-05-06 16:13:16 PM }
+warn: Status  : 401 - { 2026-05-06 16:13:16 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:13:16 PM }
+warn: Message : Invalid token - { 2026-05-06 16:13:16 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:13:16 PM }
+http: [POST]|| /api/auth/logout ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 2.316 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:13:16 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:14:22 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:14:22 PM }
+warn: Route   : POST /api/auth/logout - { 2026-05-06 16:14:22 PM }
+warn: Status  : 401 - { 2026-05-06 16:14:22 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:14:22 PM }
+warn: Message : No token provided - { 2026-05-06 16:14:22 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:14:22 PM }
+http: [POST]|| /api/auth/logout ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 1.414 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:14:22 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:14:31 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:14:31 PM }
+warn: Route   : POST /api/auth/logout - { 2026-05-06 16:14:31 PM }
+warn: Status  : 401 - { 2026-05-06 16:14:31 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:14:31 PM }
+warn: Message : No token provided - { 2026-05-06 16:14:31 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:14:31 PM }
+http: [POST]|| /api/auth/logout ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 1.587 ms }  ||Device: { PostmanRuntime/7.53.0 } - { 2026-05-06 16:14:31 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:32:21 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:32:21 PM }
+warn: Route   : POST /api/auth/logout - { 2026-05-06 16:32:21 PM }
+warn: Status  : 401 - { 2026-05-06 16:32:21 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:32:21 PM }
+warn: Message : Invalid token - { 2026-05-06 16:32:21 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:32:21 PM }
+http: [POST]|| /api/auth/logout ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 58.811 ms }  ||Device: { PostmanRuntime/7.54.0 } - { 2026-05-06 16:32:21 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:33:15 PM }
+warn: ⚠️  OPERATIONAL ERROR - { 2026-05-06 16:33:15 PM }
+warn: Route   : POST /api/auth/logout - { 2026-05-06 16:33:15 PM }
+warn: Status  : 401 - { 2026-05-06 16:33:15 PM }
+warn: Code    : SERVER_ERROR - { 2026-05-06 16:33:15 PM }
+warn: Message : Invalid token - { 2026-05-06 16:33:15 PM }
+warn: ───────────────────────────────────── - { 2026-05-06 16:33:15 PM }
+http: [POST]|| /api/auth/logout ||User:Guest ||Status:401  ||Success:false  ||ResponseTime: { 3.536 ms }  ||Device: { PostmanRuntime/7.54.0 } - { 2026-05-06 16:33:15 PM }

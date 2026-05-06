@@ -1,8 +1,7 @@
 import { z } from "zod";
 
 // ─── Login ───────────────────────────────────────────────────────────────────
-export const loginSchema = z.object({
-  body: z.object({
+export const loginSchema = z.object({ 
     companyId: z
       .string({ required_error: "Company ID is required" })
       .trim()
@@ -15,12 +14,11 @@ export const loginSchema = z.object({
     password: z
       .string({ required_error: "Password is required" })
       .min(1, "Password cannot be empty"),
-  }),
-});
+  });
 
 // ─── Forgot Password ─────────────────────────────────────────────────────────
 export const forgotPasswordSchema = z.object({
-  body: z.object({
+ 
     companyId: z
       .string({ required_error: "Company ID is required" })
       .trim()
@@ -30,7 +28,7 @@ export const forgotPasswordSchema = z.object({
       .trim()
       .email("Invalid email format")
       .toLowerCase(),
-  }),
+  
 });
 
 // ─── Reset Password ───────────────────────────────────────────────────────────
