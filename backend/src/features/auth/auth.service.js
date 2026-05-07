@@ -50,7 +50,6 @@ export const loginService = async ({ companyId, userEmail, password }, req) => {
 
   // Generate tokens
   const payload = { userId: user._id, role: user.userRole, permissions: user.permissions };
-  logger.debug(`[Auth-Service 53] Payload to be signed: ${JSON.stringify(payload, null, 2)}`);
   const accessToken = generateAccessToken(payload);
   const rawRefreshToken = generateRefreshToken({ userId: user._id });
 
@@ -153,6 +152,7 @@ export const forgotPasswordService = async ({ companyId, userEmail }) => {
   });
 
   const resetLink = `${process.env.CLIENT_URL}/auth/reset-password/${rawToken}`;
+  return { resetLink };
   await sendEmail(user.email || user.userEmail, "Password Reset Request", passwordResetTemplate(resetLink));
   logger.info(`Password reset email sent for user: ${user._id}`);
 };

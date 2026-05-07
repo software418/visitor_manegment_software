@@ -50,7 +50,7 @@ app.use(sanitizeInput);
 
 //-----------------morgan setup with winston-----------------
 
-morgan.token("user", (req) => (req.user ? `ID:${req.user.id}` : "Guest"));
+morgan.token("user", (req) => (req.user ? `ROLE:${req.user.role} ID:${req.user.userId}` : "Guest"));
 morgan.token("success", (req, res) =>
   req.success ? `${req.success}` : "false",
 );

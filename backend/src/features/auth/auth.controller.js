@@ -82,14 +82,14 @@ export const refreshToken = async (req, res, next) => {
 // ─── Forgot Password ─────────────────────────────────────────────────────────
 export const forgotPassword = async (req, res, next) => {
   try {
-    await forgotPasswordService(req.body);
+    const data = await forgotPasswordService(req.body);
 
     // Always return 200 to prevent email enumeration
     res.status(200).json({
       status: 200,
       success: true,
       message: "If the email exists, a reset link has been sent.",
-      data: null,
+      data: data,
     });
   } catch (err) {
     next(err);

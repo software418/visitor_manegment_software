@@ -6,4 +6,3 @@ build
 .env.local
 
 logs/
-*.log

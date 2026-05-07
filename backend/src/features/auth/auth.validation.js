@@ -1,5 +1,15 @@
 import { z } from "zod";
 
+const passwordSchema = z
+  .string()
+  .min(8, "Password must be at least 8 characters")
+  .regex(/[A-Z]/, "Password must contain at least one uppercase letter")
+  .regex(/[0-9]/, "Password must contain at least one number")
+  .regex(
+    /[^a-zA-Z0-9]/,
+    "Password must contain at least one special character",
+  );
+
 // ─── Login ───────────────────────────────────────────────────────────────────
 export const loginSchema = z.object({
   companyId: z
@@ -11,14 +21,11 @@ export const loginSchema = z.object({
     .trim()
     .email("Invalid email format")
     .toLowerCase(),
-  password: z
-    .string({ required_error: "Password is required" })
-    .min(1, "Password cannot be empty"),
+  password: passwordSchema,
 });
 
 // ─── Forgot Password ─────────────────────────────────────────────────────────
 export const forgotPasswordSchema = z.object({
-
   companyId: z
     .string({ required_error: "Company ID is required" })
     .trim()
@@ -28,46 +35,31 @@ export const forgotPasswordSchema = z.object({
     .trim()
     .email("Invalid email format")
     .toLowerCase(),
-
 });
 
 // ─── Reset Password ───────────────────────────────────────────────────────────
 export const resetPasswordSchema = z.object({
-  params: z.object({
-    token: z
-      .string({ required_error: "Reset token is required" })
-      .min(1, "Reset token cannot be empty"),
-  }),
-  body: z
-    .object({
-      newPassword: z
-        .string({ required_error: "New password is required" })
-        .min(8, "Password must be at least 8 characters")
-        .regex(
-          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])/,
-          "Password must contain uppercase, lowercase, number, and special character"
-        ),
-      confirmPassword: z.string({ required_error: "Confirm password is required" }),
-    })
-    .refine((data) => data.newPassword === data.confirmPassword, {
-      message: "Passwords do not match",
-      path: ["confirmPassword"],
-    }),
+  token: z.string({ required_error: "Reset token is required" }),
+  newPassword: passwordSchema,
 });
 
 // ─── Change Password ─────────────────────────────────────────────────────────
 export const changePasswordSchema = z.object({
   body: z
     .object({
-      oldPassword: z.string({ required_error: "Old password is required" }).min(1),
+      oldPassword: z
+        .string({ required_error: "Old password is required" })
+        .min(1),
       newPassword: z
         .string({ required_error: "New password is required" })
         .min(8, "Password must be at least 8 characters")
         .regex(
           /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])/,
-          "Password must contain uppercase, lowercase, number, and special character"
+          "Password must contain uppercase, lowercase, number, and special character",
         ),
-      confirmPassword: z.string({ required_error: "Confirm password is required" }),
+      confirmPassword: z.string({
+        required_error: "Confirm password is required",
+      }),
     })
     .refine((data) => data.newPassword === data.confirmPassword, {
       message: "Passwords do not match",
