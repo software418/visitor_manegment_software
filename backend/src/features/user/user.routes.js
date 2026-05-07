@@ -28,7 +28,7 @@ const router = Router();
 
 // All user routes require a valid access token
 router.use(authenticate);
-router.use(rateLimiter); // Apply rate limiting to all user routes
+router.use(rateLimiter("general")); // Apply rate limiting to all user routes
 // ─── Own Profile ──────────────────────────────────────────────────────────────
 router.get("/profile", getProfile);
 router.put("/profile", validate(updateProfileSchema), updateProfile);

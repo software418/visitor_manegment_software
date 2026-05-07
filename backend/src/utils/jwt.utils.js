@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 import AppError from "./appError.js";
+import logger from "./logger.utils.js";
 
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
 

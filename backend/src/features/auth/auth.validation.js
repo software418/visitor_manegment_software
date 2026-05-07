@@ -1,34 +1,34 @@
 import { z } from "zod";
 
 // ─── Login ───────────────────────────────────────────────────────────────────
-export const loginSchema = z.object({ 
-    companyId: z
-      .string({ required_error: "Company ID is required" })
-      .trim()
-      .min(1, "Company ID cannot be empty"),
-    userEmail: z
-      .string({ required_error: "User email is required" })
-      .trim()
-      .email("Invalid email format")
-      .toLowerCase(),
-    password: z
-      .string({ required_error: "Password is required" })
-      .min(1, "Password cannot be empty"),
-  });
+export const loginSchema = z.object({
+  companyId: z
+    .string({ required_error: "Company ID is required" })
+    .trim()
+    .min(1, "Company ID cannot be empty"),
+  userEmail: z
+    .string({ required_error: "User email is required" })
+    .trim()
+    .email("Invalid email format")
+    .toLowerCase(),
+  password: z
+    .string({ required_error: "Password is required" })
+    .min(1, "Password cannot be empty"),
+});
 
 // ─── Forgot Password ─────────────────────────────────────────────────────────
 export const forgotPasswordSchema = z.object({
- 
-    companyId: z
-      .string({ required_error: "Company ID is required" })
-      .trim()
-      .min(1, "Company ID cannot be empty"),
-    userEmail: z
-      .string({ required_error: "User email is required" })
-      .trim()
-      .email("Invalid email format")
-      .toLowerCase(),
-  
+
+  companyId: z
+    .string({ required_error: "Company ID is required" })
+    .trim()
+    .min(1, "Company ID cannot be empty"),
+  userEmail: z
+    .string({ required_error: "User email is required" })
+    .trim()
+    .email("Invalid email format")
+    .toLowerCase(),
+
 });
 
 // ─── Reset Password ───────────────────────────────────────────────────────────

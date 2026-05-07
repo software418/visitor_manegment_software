@@ -25,3 +25,5 @@ error: Stack  : ReferenceError: sendPasswordResetEmail is not defined
     at async forgotPassword (file:///D:/Manegment%20Software/backend/src/features/auth/auth.controller.js:85:5) - { 2026-05-06 15:46:14 PM }
 error: Body   : {"companyId":"COMP123","userEmail":"admin@vms.com"} - { 2026-05-06 15:46:14 PM }
 error: ───────────────────────────────────── - { 2026-05-06 15:46:14 PM }
+error: Error verifying access token - { 2026-05-06 17:21:54 PM }
+error: Error verifying access token: eyJhbGciOiJIUzI1NiJ9.e30.rGxziXAL8_TDhYmUehAcSve5tu2lJOJII_GeZCFxBOs - { 2026-05-06 17:24:07 PM }

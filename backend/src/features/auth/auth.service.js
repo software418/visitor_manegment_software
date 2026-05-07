@@ -3,8 +3,8 @@ import bcrypt from "bcryptjs";
 import User from "../user/user.model.js";
 import { PasswordReset, Session } from "./auth.model.js";
 import { generateAccessToken, generateRefreshToken, verifyRefreshToken } from "../../utils/jwt.utils.js";
-import { passwordResetTemplate } from "../../utils/email.utils.js";
-import AppError from "../../utils/AppError.js";
+import { sendEmail, passwordResetTemplate } from "../../utils/email.utils.js";
+import AppError from "../../utils/appError.js";
 import logger from "../../utils/logger.utils.js";
 
 const MAX_SESSIONS = 3;
@@ -49,7 +49,9 @@ export const loginService = async ({ companyId, userEmail, password }, req) => {
   }
 
   // Generate tokens
-  const accessToken = generateAccessToken({ userId: user._id, role: user.userRole, permissions: user.permissions });
+  const payload = { userId: user._id, role: user.userRole, permissions: user.permissions };
+  logger.debug(`[Auth-Service 53] Payload to be signed: ${JSON.stringify(payload, null, 2)}`);
+  const accessToken = generateAccessToken(payload);
   const rawRefreshToken = generateRefreshToken({ userId: user._id });
 
   // Enforce session limit then persist new session
@@ -150,7 +152,8 @@ export const forgotPasswordService = async ({ companyId, userEmail }) => {
     token: hashToken(rawToken),
   });
 
-  await sendPasswordResetEmail(user.email || user.userEmail, rawToken, user.firstName);
+  const resetLink = `${process.env.CLIENT_URL}/auth/reset-password/${rawToken}`;
+  await sendEmail(user.email || user.userEmail, "Password Reset Request", passwordResetTemplate(resetLink));
   logger.info(`Password reset email sent for user: ${user._id}`);
 };
 

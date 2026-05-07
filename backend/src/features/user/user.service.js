@@ -1,6 +1,6 @@
 import User, { ROLE_DEFAULT_PERMISSIONS } from "./user.model.js";
 import { Session } from "../auth/auth.model.js";
-import AppError from "../../utils/AppError.js";
+import AppError from "../../utils/appError.js";
 import logger from "../../utils/logger.utils.js";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────

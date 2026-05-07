@@ -1,7 +1,6 @@
 import { verifyAccessToken } from "../utils/jwt.utils.js";
 import User from "../features/user/user.model.js";
 import AppError from "../utils/appError.js";
-
 // ─── Authenticate ────────────────────────────────────────────────────────────
 // Verifies access token and attaches user to req.user
 // Use on every protected route
@@ -20,8 +19,14 @@ export const authenticate = async (req, res, next) => {
     // 3. Verify token — throws AppError if invalid or expired
     const decoded = verifyAccessToken(token);
 
+    // Guard: ensure decoded payload contains userId
+    if (!decoded || !decoded.userId) {
+      throw new AppError("Invalid token payload", 401, "UNAUTHORIZED");
+    }
+
     // 4. Check user still exists and is active
-    const user = await User.findById(decoded.userId).select("_id role status");
+    const user = await User.findById(decoded.userId).select("_id userRole isActive permissions");
+
     if (!user) {
       throw new AppError("User no longer exists", 401, "UNAUTHORIZED");
     }
@@ -30,12 +35,11 @@ export const authenticate = async (req, res, next) => {
       throw new AppError("Your account has been blocked", 403, "ACCOUNT_BLOCKED");
     }
 
-
     // 5. Attach user to request
     req.user = {
       userId: user._id,
-      role: user.role,
-      status: user.status,
+      role: user.userRole,
+      permissions: user.permissions,
     };
 
     next();
@@ -43,6 +47,7 @@ export const authenticate = async (req, res, next) => {
     next(err);
   }
 };
+// require permission
 export const requirePermission = (key) => (req, res, next) => {
   if (!req.user?.permissions?.[key]) {
     return next(new AppError("Forbidden", 403, "FORBIDDEN"));
@@ -64,15 +69,4 @@ export const authorize = (...roles) => {
   };
 };
 
-// ─── Seller Guards ───────────────────────────────────────────────────────────
-// Extra checks required for sellers beyond role + status
-
-export const requireSellerApproved = (req, res, next) => {
-  if (req.user.status === "pending") {
-    return next(
-      new AppError("Your seller account is pending admin approval", 403, "SELLER_NOT_APPROVED")
-    );
-  }
-  next();
-};
 
